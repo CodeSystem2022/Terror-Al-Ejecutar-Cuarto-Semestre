@@ -33,6 +33,7 @@ while opcion != 5:
         usuario = Usuario(id_usuario=id_usuario_var)
         usuario_eliminar =UsuarioDAO.eliminar(usuario)
         log.info(f'Usuario eliminad: {usuario_eliminado}')
+
 else:
     log.info('Salimos de la aplicacion, hasta pronto!!')
 
