@@ -84,6 +84,8 @@ const displayCart = () => {
             deleteProduct.addEventListener("click", ()=>{
                 deleteCartProduct(product.id); //le enviamos como parametro el id del producto que esta a eliminar
             })
+
+
         });
 
         //MODAL FOTTER
@@ -107,5 +109,18 @@ const displayCart = () => {
         //y tiene el idioma y moneda con la que se trabajara
         locale: "es-AR", 
     });
+
+
+    const displayCartCounter = () => {
+    const cartLength = cart.reduce((acc, el) => acc + el.quanty, 0);
+    if(cartLength > 0){
+        
+        cartCounter.style.display = "block";
+        cartCounter.innerText = cartLength;
+    }else{
+        cartCounter.style.display = "none"
+    }
+    
+}
 
    
