@@ -1,6 +1,7 @@
 export const listarTareas = (req,res) => res.send('obteniendo tareas');
 
 export const listarTarea = async (req,res)=> {
+    console.log(req.usuarioId);
     const resultado = await pool.query('SELECT = FROM tareas WHERE id =$1',[req.params.id]);
     if (resultado.rowCount === 0){
         return res.status(404).json({
