@@ -6,14 +6,21 @@ function RegisterPage() {
 
     const {register, handleSubmit, fromState: {errors} } = useform();
 
-    const onSubmit =handleSubmit((data) => {
-        console.log(data);
+    const {signup, errors: setUserErrors} = useAuth();
+    const navigate = useNavigate();
+    const onSubmit = handleSubmit(async(data) => {
+        const user = await signup(data);
+        navigate("/perfil")
     });
 
 
     return (
-        <div className="h-[calc(100vh-64px)] flex items-center justify-center">            
+        <Container className="h-[calc(100vh-10rem)] flex items-center justify-center">            
             <Card>
+                {setUserErrors &&
+                  setUserErrors.map((error) => (
+                    <p className="bg-red-500 text-white p2">{error}</p>
+                  ))}
             <h3 className="text-2x1 font-bold">Registro</h3>
                 <form onSubmit={onSubmit}>
 
@@ -36,7 +43,7 @@ function RegisterPage() {
                     <button>Registrarse</button>
                 </form>
             </Card>
-        </div>
+        </Container>
     );
 }
 
