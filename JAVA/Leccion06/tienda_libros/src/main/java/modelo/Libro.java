@@ -1,4 +1,4 @@
-package UTN.estudiantes.modelo;
+package utn.tienda_libros.modelo;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -10,17 +10,16 @@ import lombok.NoArgsConstructor;
 import lombok.ToString;
 
 @Entity
-//boilerplate - Repetitive code
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @ToString
-public class Estudiante {
+public class Libro {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer idEstudiante;
-    private String nombre;
-    private String apellido;
-    private String telefono;
-    private String email;
+    Integer idLibro;
+    String nombreLibro;
+    String autor;
+    Double precio;
+    Integer existencias;
 }

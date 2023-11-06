@@ -1,9 +1,7 @@
 
-// eslint-disable-next-line react/prop-types
-export function Card({children}) {
+
+export function Card({children, className}) {
     return (
-        <div className="bg-zinc-900 p-14 rounded-md">{children}</div>
+        <div className={`bg-zinc-900 p-14 rounded-mb${className}`}>{children}</div>
     )
 }
-
-export default Card
