@@ -1,0 +1,13 @@
+import md5 from "md5";
+
+const resultado =await pool.query('SELECT * FROM tareas WHERE usuario_id=$1', [req.usuarioId]);
+return resultado.json(resultado.rows);
+
+
+try{
+    const hashedPassword = await bcrypt.hash(password, 10);
+    md5(email);
+    const gravatar ="https://gravatar.com/avatar/${md5(email)}"+ md5(email);
+
+    const result = await pool.query('INSERT INTO usuarios (name, email, password, gravatar)VALUES ($1, $2, $3, $4) Returning*',[name, email, hashedPassword, gravatar]);
+};
