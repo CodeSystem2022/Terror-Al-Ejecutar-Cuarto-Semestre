@@ -22,7 +22,9 @@ export const signup = async (req, res) => {
       sameSite: "none",
       maxAge: 60 * 60 * 24 * 1000,//1 dia
     });
-    return res.json(result.rows[0]);
+    return res.json({
+      token:token
+    });
   } catch (error) {
     if(error.code === "23505"){
       return res.status(400).json({message: "El correo ya está registrado"});
