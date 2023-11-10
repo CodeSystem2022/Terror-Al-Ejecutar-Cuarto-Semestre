@@ -12,8 +12,8 @@ sueldo = 3000
 # print(mensaje_con_formato)
 
 # 6.3 PARTE2
-# mensaje = 'Nombre {0} Edad {1}  Sueldo {2:.2f}'.format(nombre, edad, sueldo)
-# print(mensaje)
+mensaje = 'Nombre {0} Edad {1}  Sueldo {2:.2f}'.format(nombre, edad, sueldo)
+print(mensaje)
 
 # 6.3 parte 3
 mensaje = 'Nombre {n} Edad {e} Sueldo {s:.2f}'.format(n=nombre, e=edad, s=sueldo)
