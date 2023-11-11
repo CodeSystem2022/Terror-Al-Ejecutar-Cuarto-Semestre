@@ -18,13 +18,9 @@
             <!-- %logger{36} - Abbreviate -->
 
             <!-- [Date and time] [Thread] LoggingLevel : LoggerName - Logging message -->
-<<<<<<<< HEAD:JAVA/Leccion01/estudiantes/src/main/resources/logback-spring.xml
             <!--<pattern>[%thread] %-5level: %logger - %msg%n</pattern>-->
             <pattern>%msg</pattern>
 
-========
-            <pattern>[%thread] %-5level: %logger - %msg%n</pattern>
->>>>>>>> main:JAVA/Semana2/estudiantes/src/main/resources/logback-spring.xml
         </encoder>
     </appender>
 
