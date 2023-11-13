@@ -17,9 +17,10 @@ valor = 'Hola'
 resultado = bool(valor)
 print(f'valor: {valor}, Resultado: {resultado}')
 
-# tipo de colecciones ->false para colecciones vacias
-# true para todas las demas
-#List
+# Tipo de colecciones -> False para colecciones vacías.
+# True para todas las demas
+
+# List
 valor = []
 resultado = bool(valor)
 print(f'valor de una lista vacia: {valor}, Resultado: {resultado}')
@@ -28,7 +29,7 @@ valor = [2, 3, 4, 5]
 resultado = bool(valor)
 print(f'valor de una lista con elementos: {valor}, Resultado: {resultado}')
 
-#Tupla
+# Tupla
 valor = ()
 resultado = bool(valor)
 print(f'valor de una tupla vacia: {valor}, Resultado: {resultado}')
@@ -36,7 +37,8 @@ print(f'valor de una tupla vacia: {valor}, Resultado: {resultado}')
 valor = (5,)
 resultado = bool(valor)
 print(f'valor de una tupla con elementos: {valor}, Resultado: {resultado}')
-#Diccionario
+
+# Diccionario
 valor = {}
 resultado = bool(valor)
 print(f'valor de un diccionario vacio: {valor}, Resultado: {resultado}')
@@ -51,7 +53,7 @@ if (1,):
 else:
     print('Regresa falso')
 
-# ciclos
+# Ciclos
 variable = 17
 while variable:
     print('Regresa verdadero')
