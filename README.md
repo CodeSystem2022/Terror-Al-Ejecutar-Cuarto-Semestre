@@ -14,5 +14,5 @@
 6- Jorge Rojas
 7- Vanesa Moreno
 8- Germán Abalos
-9- Walter Díaz
+9- Walter Hugo Diaz
 # Terror-Al-Ejecutar-Cuarto-Semestre
